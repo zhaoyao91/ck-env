@@ -1,0 +1,12 @@
+{
+  "name": "ck-env",
+  "version": "1.0.0",
+  "description": "Check and ensure environment variables.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["check", "env"],
+  "author": "zhaoyao91 <zhaoyao91@gmail.com>",
+  "license": "MIT"
+}
