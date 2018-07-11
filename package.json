@@ -4,9 +4,25 @@
   "description": "Check and ensure environment variables.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest .",
+    "lint": "standard",
+    "fix": "standard --fix"
   },
-  "keywords": ["check", "env"],
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "keywords": [
+    "check",
+    "env"
+  ],
   "author": "zhaoyao91 <zhaoyao91@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.1.5",
+    "jest": "^23.4.0",
+    "nanoid": "^1.0.7",
+    "standard": "^11.0.1"
+  }
 }
