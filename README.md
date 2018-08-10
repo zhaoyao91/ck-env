@@ -13,8 +13,8 @@ Check and ensure environment variables.
 - No dependencies
 - Simple and easy to use
 - Extensible for validation
-- Throw error instead of kill the app
-- Do not assume the place where the config comes from
+- Throw error instead of killing the app
+- Not assuming the place where the config comes from
 
 ## Installation
 
@@ -37,7 +37,7 @@ checkEnv({
   'ENV_4': ['default value', validator]
 })
 
-// validator is a function which receives the env value and tell if it is valid
+// validator is a function which receives the env value and tells if it is valid
 function validator(value) {
   reutrn ['A', 'B', 'C'].includes(value)
 }
