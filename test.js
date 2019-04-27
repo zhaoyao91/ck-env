@@ -4,6 +4,12 @@ const check = require('./index')
 
 describe('check', () => {
   describe('required env', () => {
+    it('should pass if non-required env is not set', () => {
+      check({
+        'non-required-env': false
+      })
+    })
+
     it('should pass if required env is set', () => {
       const [key] = setRandomEnv()
       check({

@@ -28,6 +28,7 @@ npm install ck-env
 const checkEnv = require('ck-env')
 
 checkEnv({
+  'ENV_0': false, // this env is not required
   'ENV_1': true, // this env is required
   'ENV_2': 'default value', // default value will be assigned to this env if it is not set
   'ENV_3': validator // this env is required and the value must pass the given validator

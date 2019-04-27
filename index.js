@@ -9,7 +9,8 @@ function check (config) {
 module.exports = check
 
 function checkItem (key, value) {
-  if (value === true) checkRequiredItem(key, value)
+  if (value === false) return
+  else if (value === true) checkRequiredItem(key, value)
   else if (typeof value === 'string') checkDefaultValue(key, value)
   else if (typeof value === 'function') checkValidator(key, value)
   else if (Array.isArray(value) && typeof value[0] === 'string' && typeof value[1] === 'function') checkDefaultValueAndValidator(key, value)

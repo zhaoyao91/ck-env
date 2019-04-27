@@ -1,6 +1,6 @@
 {
   "name": "ck-env",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Check and ensure environment variables.",
   "main": "index.js",
   "repository": "https://github.com/zhaoyao91/ck-env",
